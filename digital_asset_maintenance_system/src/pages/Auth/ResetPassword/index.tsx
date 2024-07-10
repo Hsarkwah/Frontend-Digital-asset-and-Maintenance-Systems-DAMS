@@ -1,26 +1,25 @@
 import '../../../assets/css/Auth.css'
+import AuthForm from '../../../components/Authentication/Form'
 
 
 const ResetPassword = () => {
+
+  function resetButton() {
+    console.log('Reset Password clicked')
+  }
+
   return (
-    <>
-      <div className='login-container'>
-        <div className='login-content'>
-          <h1 className='auth-title'>Reset Password</h1>
-          <form className='auth-form'>
-            <div className='auth-form-group'>
-              <label htmlFor='password'>New Password</label>
-              <input type='password' name='password' id='password' />
-            </div>
-            <div className='auth-form-group'>
-              <label htmlFor='confirm-password'>Confirm Password</label>
-              <input type='password' name='confirm-password' id='confirm-password' />
-            </div>
-            <button className='btn btn-submit'>Reset</button>
-          </form>
-        </div>
+    <div className='login-container'>
+      <div className='login-content'>
+        <AuthForm
+          type='reset'
+          title='Reset Password'
+          passwordText='New Password'
+          actionText='Reset'
+          onButtonClick={resetButton} />
+
       </div>
-    </>
+    </div>
   )
 }
 

@@ -17,3 +17,4 @@
 // }
 
 // export default MainLayout
+export default {}

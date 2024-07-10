@@ -4,34 +4,29 @@ import Login from '../pages/Auth/Login'
 import ForgotPassword from '../pages/Auth/ForgotPassword'
 import ResetPassword from '../pages/Auth/ResetPassword'
 // import MainLayout from '../layouts/MainLayout'
-import logo from '../assets/images/ghs-logo.jpeg'
-import authImage from '../assets/images/close-up-man-repairing-computer-chips.jpg'
-import Layout from '../components/Layouts'
 
 
 const rootRouter = createBrowserRouter([
-  {
-    path: '/',
-    // element: <MainLayout />
-  },
+  // {
+  //   path: '/',
+  //   // element: <MainLayout />
+  // },
   {
     path: '/auth',
-    element: <AuthLayout logo={logo} authImage={authImage} title={Layout.title} />,
+    element: <AuthLayout />,
     children: [
       {
         path: '/auth/login',
+        element: <Login />,
         index: true,
-        element: <Login />
       },
       {
         path: '/auth/forgot-password',
-        index: true,
-        element: <ForgotPassword />
+        element: <ForgotPassword />,
       },
       {
         path: '/auth/reset-password',
-        index: true,
-        element: <ResetPassword />
+        element: <ResetPassword />,
       }
     ]
   }

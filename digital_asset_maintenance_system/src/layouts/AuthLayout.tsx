@@ -1,6 +1,14 @@
 import { Outlet } from 'react-router-dom'
+import logo from '../assets/images/ghs-logo.jpeg'
+import authImage from '../assets/images/close-up-man-repairing-computer-chips.jpg'
+import Layout from '../components/Layouts'
 
-const AuthLayout = ({authImage, logo, title}: {authImage: string, logo: string, title: string}) => {
+
+
+const AuthLayout = () => {
+
+  const title = Layout.title ? Layout.title : 'App title goes here';
+
   return (
     <>
       <section className='flex'>
