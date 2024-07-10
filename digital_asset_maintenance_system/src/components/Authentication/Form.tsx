@@ -18,14 +18,14 @@ function AuthForm({
         <form className='auth-form'>
             <h1 className='auth-title'>{title}</h1>
 
-            {type === 'login' || type === 'forgot-password' && (
+            {(type === 'login' || type === 'forgot-password') && (
                 <div className='auth-form-group'>
                     <label htmlFor='email'>Email</label>
                     <input type='email' name='email' id='email' />
                 </div>
             )}
 
-            {type === 'login' || type === 'reset' && (
+            {(type === 'login' || type === 'reset') && (
                 <div className='auth-form-group'>
                     <label htmlFor='password'>{passwordText}</label>
                     <input type='password' name='password' id='password' />
