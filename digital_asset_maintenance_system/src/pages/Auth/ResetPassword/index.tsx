@@ -14,7 +14,6 @@ const ResetPassword = () => {
         <AuthForm
           type='reset'
           title='Reset Password'
-          passwordText='New Password'
           actionText='Reset'
           onButtonClick={resetButton} />
 

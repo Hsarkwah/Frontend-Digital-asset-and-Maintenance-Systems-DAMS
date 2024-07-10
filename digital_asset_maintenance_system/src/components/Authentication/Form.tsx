@@ -4,16 +4,16 @@ interface FormProps {
     actionText: string,
     onButtonClick?: () => void,
     // onChangeText?: () => void,
-    passwordText?: string,
 }
 
 function AuthForm({
     type,
     actionText = 'Action Text',
     title = 'Form Title',
-    passwordText = 'Password',
     onButtonClick
 }: FormProps): JSX.Element {
+    const passwordText = type === 'reset' ? 'New Password' : 'Password';
+    
     return (
         <form className='auth-form'>
             <h1 className='auth-title'>{title}</h1>
