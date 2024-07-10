@@ -43,7 +43,7 @@ Added detailed setup instructions to the README file to help new developers get 
 
 ### General Guidelines
 - **Indentation**: Use 2 spaces for indentation.
-- **Quotes**: Use double quotes for strings.
+- **Quotes**: Use single quotes for strings.
 - **Semicolons**: Always end statements with a semicolon.
 - **Line Length**: Limit lines to 80 characters.
 - **Naming**: Use camelCase for variables and functions, PascalCase for classes and React components.
@@ -54,11 +54,11 @@ Added detailed setup instructions to the README file to help new developers get 
 // Good example
 const fetchData = async () => {
   try {
-    const response = await fetch("/api/data");
+    const response = await fetch('/api/data');
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error('Error fetching data:', error);
   }
 };
 
