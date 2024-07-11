@@ -17,48 +17,48 @@ const SideNavbar = () => {
         <li className='nav-list-item active'>
           <Link to=''>
             <ChartBarIcon className='nav-icon' />
+            <span className='nav-list-item-description'>Dashboard</span>
           </Link>
-          <span className='nav-list-item-description'>Dashboard</span>
         </li>
         <li className='nav-list-item'>
           <Link to='/assets'>
             <ComputerDesktopIcon className='nav-icon' />
+            <span className='nav-list-item-description'>Assets</span>
           </Link>
-          <span className='nav-list-item-description'>Assets</span>
         </li>
         <li className='nav-list-item'>
           <Link to=''>
             <UsersIcon className='nav-icon' />
+            <span className='nav-list-item-description'>Users</span>
           </Link>
-          <span className='nav-list-item-description'>Users</span>
         </li>
         <li className='nav-list-item'>
           <Link to=''>
             <BuildingOfficeIcon className='nav-icon' />
+            <span className='nav-list-item-description'>Programs</span>
           </Link>
-          <span className='nav-list-item-description'>Programs</span>
         </li>
 
         <li className='nav-list-item'>
           <Link to=''>
             <WrenchScrewdriverIcon className='nav-icon' />
+            <span className='nav-list-item-description'>Maintenance</span>
           </Link>
-          <span className='nav-list-item-description'>Maintenance</span>
         </li>
         <li className='nav-list-item'>
           <Link to=''>
             <ClipboardDocumentListIcon className='nav-icon' />
+            <span className='nav-list-item-description'>
+              Roles and Permissions
+            </span>
           </Link>
-          <span className='nav-list-item-description'>
-            Roles and Permissions
-          </span>
         </li>
 
         <li className='nav-list-item logout'>
           <Link to=''>
             <ArrowRightEndOnRectangleIcon className='nav-icon' />
+            <span className='nav-list-item-description'>Logout</span>
           </Link>
-          <span className='nav-list-item-description'>Logout</span>
         </li>
       </ul>
     </nav>
