@@ -20,7 +20,7 @@ nav {
 }
 
 .nav-list-item a {
-    display: inline;
+    display: flex;
     width: 25px
 }
 

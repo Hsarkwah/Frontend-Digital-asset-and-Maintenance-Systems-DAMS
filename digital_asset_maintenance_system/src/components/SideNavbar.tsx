@@ -21,7 +21,7 @@ const SideNavbar = () => {
           <span className='nav-list-item-description'>Dashboard</span>
         </li>
         <li className='nav-list-item'>
-          <Link to=''>
+          <Link to='/assets'>
             <ComputerDesktopIcon className='nav-icon' />
           </Link>
           <span className='nav-list-item-description'>Assets</span>

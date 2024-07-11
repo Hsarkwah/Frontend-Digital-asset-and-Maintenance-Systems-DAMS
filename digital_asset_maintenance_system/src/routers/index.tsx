@@ -4,12 +4,19 @@ import Login from '../pages/Auth/Login'
 import ForgotPassword from '../pages/Auth/ForgotPassword'
 import ResetPassword from '../pages/Auth/ResetPassword'
 import MainLayout from '../layouts/MainLayout'
+import Assets from '../pages/Main/Assets'
 
 
 const rootRouter = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout />
+    element: <MainLayout />,
+    children: [
+      {
+        path: '/assets',
+        element: <Assets />,
+      }
+    ]
   },
   {
     path: '/auth',

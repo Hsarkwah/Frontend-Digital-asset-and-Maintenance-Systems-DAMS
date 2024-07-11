@@ -1,0 +1,51 @@
+section.main-section {
+    position: relative;
+    width: calc(100% - 60px);
+    top: 70px;
+    left: 60px;
+}
+
+section.main-section .container {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+section.main-section .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 1rem;
+}
+
+section.main-section .heading h2 {
+    color: var(--GrayBlack);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#asset {
+    padding: 0.5rem;
+}
+
+.heading .btn {
+    width: 50%;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.filter {
+    flex-basis: 15%;
+}
+
+.filter select {
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.program, .facility {
+    flex-grow: 2;
+}
