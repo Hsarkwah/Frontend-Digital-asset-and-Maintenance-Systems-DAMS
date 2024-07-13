@@ -1,0 +1,16 @@
+.device-info-group {
+    margin-block-end: 2.5rem;
+}
+
+.device-info-group div {
+    flex-wrap: wrap;
+}
+
+.device-info-group div p {
+    flex-basis: 45%;
+    margin-block-end: 1rem;
+}
+
+.device-info-group div p span:first-child {
+    font-weight: 600;
+}
