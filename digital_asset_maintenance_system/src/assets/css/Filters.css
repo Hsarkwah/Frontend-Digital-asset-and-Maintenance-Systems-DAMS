@@ -1,0 +1,20 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block-end: 1.5rem;
+}
+
+.filter {
+    flex-basis: 10%;
+}
+
+.filter select {
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.program,
+.facility {
+    flex-basis: 20%;
+}

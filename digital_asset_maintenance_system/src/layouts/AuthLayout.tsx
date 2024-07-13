@@ -11,9 +11,9 @@ const AuthLayout = () => {
 
   return (
     <>
-      <section className='flex'>
+      <section className='flex relative'>
         {/* Authentication layout image section */}
-        <div className='auth-image-section basis-2/3 relative'>
+        <div className='auth-image-section'>
           <figure>
             <img src={authImage}
               alt='A man reparing computer chips.' />
@@ -21,7 +21,7 @@ const AuthLayout = () => {
         </div>
 
         {/* Authentication layout content section */}
-        <div className='basis-1/3 py-[3rem] flex justify-center'>
+        <div className='py-[3rem] flex justify-center px-[3rem] auth-content-container'>
           <div className='auth-content'>
             <div className='auth-content-header flex justify-center items-center flex-col mb-3'>
               <div className='w-[70px] h-[100px] mb-1'>
@@ -30,7 +30,7 @@ const AuthLayout = () => {
                 </figure>
               </div>
               <h1
-                className='text-[1rem] font-[500] mb-6'
+                className='text-[1rem] font-[500] mb-6 text-center'
               >
                 {title}
               </h1>

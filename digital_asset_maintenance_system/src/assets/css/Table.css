@@ -1,0 +1,41 @@
+section.records-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block-start: 1rem;
+    border-radius: 8px;
+    margin-block-end: 1rem;
+}
+
+thead tr {
+    background-color: var(--GrayGreen);
+    color: var(--White);
+}
+
+th {
+    font-weight: 600;
+    padding: 0.4rem;
+}
+
+th,
+td {
+    text-align: start;
+    border: 1px solid var(--White);
+}
+
+td {
+    padding: 0.2rem 0.5rem;
+}
+
+tr {
+    background-color: var(--FadedWhite);
+}
+
+tr td:last-of-type {
+    border: none;
+}
+
+.table-icons {
+    width: 20px;
+    cursor: pointer;
+    color: var(--GrayBlack);
+}

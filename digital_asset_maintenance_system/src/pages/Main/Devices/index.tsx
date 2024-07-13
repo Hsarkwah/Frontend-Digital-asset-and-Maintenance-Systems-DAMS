@@ -1,18 +1,19 @@
 import '../../../assets/css/MainSections.css'
+import '../../../assets/css/Devices.css'
 import { Colors } from '../../../assets/colors'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import Filters from '../../../components/Main/Filters'
+import Table from '../../../components/Main/Table'
+import { Link } from 'react-router-dom'
 
-const AssetsPage = () => {
+const Devices = () => {
   return (
     <section className='main-section'>
       <div className='container'>
         <div className='heading'>
-          <h2 className=''>Assets</h2>
+          <h2 className=''>Devices</h2>
           <div className='flex items-center gap-[1rem]'>
-            <button type='button' className='btn btn-submit mb-0'>
-              Add Asset
-            </button>
+            <Link to='/devices/add' className='btn btn-submit mb-0 add-device-btn'>Add device</Link>
             <div className='flex items-center gap-2'>
               <input
                 type='text'
@@ -26,9 +27,10 @@ const AssetsPage = () => {
           </div>
         </div>
         <Filters />
+        <Table />
       </div>
     </section>
   )
 }
 
-export default AssetsPage
+export default Devices

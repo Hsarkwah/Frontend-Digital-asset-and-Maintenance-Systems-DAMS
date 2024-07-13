@@ -4,7 +4,7 @@ interface LayoutProps  {
 
 
 const Layouts: LayoutProps = {
-    title: "Digital Asset Management and Maintenance System"
+    title: "Digital Asset Management and Maintenance System (DAMMS)"
 }
 
 

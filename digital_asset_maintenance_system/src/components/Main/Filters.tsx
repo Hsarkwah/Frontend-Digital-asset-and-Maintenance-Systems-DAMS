@@ -1,3 +1,5 @@
+import '../../assets/css/Filters.css'
+
 const Filters = () => {
   return (
     <section>
@@ -35,6 +37,12 @@ const Filters = () => {
         <div className='filter'>
           <label htmlFor='cadre'>Cadre</label>
           <select name='cadre' id='cadre'>
+            <option value='all'>All</option>
+          </select>
+        </div>
+        <div className='filter'>
+          <label htmlFor='year'>Year</label>
+          <select name='year' id='year'>
             <option value='all'>All</option>
           </select>
         </div>

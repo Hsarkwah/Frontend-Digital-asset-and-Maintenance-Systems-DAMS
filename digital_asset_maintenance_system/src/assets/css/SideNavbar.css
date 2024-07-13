@@ -5,6 +5,7 @@ nav {
     background-color: var(--Green);
     padding: 1rem 0.5rem;
     z-index: 50;
+    min-width: 60px;
 }
 
 .nav-list-item {

@@ -1,7 +1,13 @@
-
 .auth-image-section img {
     height: 100vh;
     background-size: cover;
+}
+
+.auth-image-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% / 3 + 100% / 3)
 }
 
 .auth-image-section::before {
@@ -14,6 +20,13 @@
     height: 100%;
     background-color: var(--GreenOverlay);
 }
+
+.auth-content-container {
+    position: absolute;
+    right: 0;
+    width: calc(100% / 3)
+}
+
 
 .auth-title {
     text-align: center;

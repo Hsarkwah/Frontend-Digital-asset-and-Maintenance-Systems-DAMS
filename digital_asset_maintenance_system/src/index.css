@@ -2,8 +2,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
 :root {
-	 --Red: #FE0000;
+    --Red: #FE0000;
     --Yellow: #FDCD01;
     --Green: #0A933B;
     --Black: #000000;
@@ -16,100 +19,205 @@
     --FadedGreen: #87d0a2;
     --FadedRed: #dc6261;
     --FadedYellow: #ddc771;
-    --BlackOverlay: #292929;
+    --BlackOverlay: #2929297a;
     --Disable: #e5e3e2;
     --GreenOverlay: #0c290093;
-	font-size: 16px;
+    --GrayGreenOverlay: #ebfff2;
+    font-size: 16px;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	color: var(--GrayBlack);
-	box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: var(--GrayBlack);
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, input, 
-label, select {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+input,
+label,
+select {
+    display: block;
 }
 
-img, a {
-  width: 100%;
-  height: auto;
-  display: inline-block;
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img,
+a {
+    width: 100%;
+    height: auto;
+    display: inline-block;
 }
 
 .btn {
-	width: 100%;
-	padding: 0.5rem;
-	margin-bottom: 1rem;
-	border: none;
-	border-radius: 0.25rem;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 
 .btn:hover {
-	opacity: 0.7;
-	transform: translateY(-2px);
+    opacity: 0.9;
+    transform: translateY(-2px);
 }
 
 .btn-submit {
-	background-color: var(--Green);
-	color: var(--White);
+    background-color: var(--Green);
+    color: var(--White);
+}
+
+.btn-delete {
+    background-color: var(--GrayRed);
+    color: var(--Red);
+
 }
 
 .container {
-	padding-inline: 1.5rem;
+    padding-inline: 1.5rem;
 }
 
-input,select {
-	width: 100%;
-	padding: 0.5rem;
-	margin-bottom: 1rem;
-	border: 1px solid var(--Disable);
-	border-radius: 0.25rem;
-	outline: none;
+input,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--Disable);
+    border-radius: 0.25rem;
+    outline: none;
 }
 
-input:focus, select:focus {
-	border: 1px solid var(--GrayBlack);
+.show {
+    display: block;
+}
+
+input:focus,
+select:focus {
+    border: 1px solid var(--GrayBlack);
 }
 
 

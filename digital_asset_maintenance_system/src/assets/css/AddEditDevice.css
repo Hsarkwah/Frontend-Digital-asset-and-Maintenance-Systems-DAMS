@@ -1,0 +1,48 @@
+.form-container {
+    padding-inline: 5rem;
+    padding-block: 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-block-end: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--GrayGreen);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-block-end: 0.5rem;
+}
+
+.add-device-form-section:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+
+.form-group:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.form-group.text {
+    flex-basis: 45%;
+}
+
+.form-group input[type="text"], select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--Disable);
+    border-radius: 5px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
