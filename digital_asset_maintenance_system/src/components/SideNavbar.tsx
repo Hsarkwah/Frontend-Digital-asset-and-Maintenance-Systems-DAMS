@@ -60,6 +60,7 @@ const SideNavbar = () => {
           </Link>
           <span className='nav-list-item-description'>Logout</span>
         </li>
+
       </ul>
     </nav>
   )

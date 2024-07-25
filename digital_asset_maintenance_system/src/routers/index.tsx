@@ -5,11 +5,19 @@ import ForgotPassword from '../pages/Auth/ForgotPassword'
 import ResetPassword from '../pages/Auth/ResetPassword'
 import MainLayout from '../layouts/MainLayout'
 
+import DashboardPage from '../pages/Blank'
+
 
 const rootRouter = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout />
+    element: <MainLayout />,
+    children: [
+      {
+        path: '',
+        element: <DashboardPage title='Dasboard' />
+      }
+    ]
   },
   {
     path: '/auth',
